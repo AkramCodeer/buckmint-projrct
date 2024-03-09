@@ -1,0 +1,76 @@
+/* UpcomingSchedule.css */
+
+/* Container styles */
+.upcoming-schedule-container {
+    width: 400px;
+    min-height: 180px; /* Set minimum height */
+    height: auto; /* Allow height to expand */
+    margin-left: 60%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Position the container */
+    top: 560px;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: flex-start; /* Start from top */
+    z-index: 1;
+}
+
+/* Heading styles */
+.section-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* White container styles */
+.white-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown styles */
+.date-dropdown {
+    margin-bottom: 10px;
+}
+
+.date-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Hover styles for dropdown */
+.date-select:hover {
+    border-color: #999;
+}
+
+/* Option styles for dropdown */
+.date-select option {
+    background-color: #fff;
+}
+.create-button{
+    background-color: transparent;
+    color: red;
+    box-shadow: 0px 0px 0px 0.1px;
+}
+.save-button{
+    background-color: transparent;
+    color: red;
+}
+.save-button:hover{
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .upcoming-schedule-container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: auto;
+        margin-right: auto; /* Center the container horizontally */
+    }
+}

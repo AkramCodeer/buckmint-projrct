@@ -1,0 +1,119 @@
+.dashboard {
+  margin-left: 220px; /* Align with left margin of 220px */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottom-section {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-box {
+  width: 240px;
+  height: 140px; 
+  padding: 20px;
+  border: 0.5px black solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.bottom-box h3{
+  margin: 0;
+  font-size: 16px;
+}
+.bottom-box p{
+  margin: 5px 0;
+  font-size: xx-large;
+  font-weight: 100;
+}
+.bottom-box p1 {
+   font-size: x-small;
+}
+
+
+.graph-image {
+max-width: 50%; 
+max-height: 100%; 
+align-self: flex-end; 
+}
+
+
+.dashboard-heading {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.box {
+  width: 150px;
+  height: 90px;
+  padding: 20px 16px; /* Adjusted padding */
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+ .bottom-box:hover {
+  transform: translateY(-5px); /* Move box up by 5px on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.3s;
+}
+.box:hover {
+  transform: translateY(-5px); /* Move box up by 5px on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.beige {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.blue {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.light-purple {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.box h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.box p {
+  margin: 5px 0;
+  font-size: xx-large;
+  font-weight: 100;
+}
+
+.box p1 {
+  font-size: x-small;
+}
+@media screen and (max-width: 900px) {
+  .dashboard {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .bottom-section,
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-box,
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .graph-image {
+    max-width: 100%;
+  }
+}

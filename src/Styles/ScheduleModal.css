@@ -1,0 +1,157 @@
+/* ScheduleModal.css */
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 2;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.calendar-container {
+  margin-top: 20px;
+}
+
+.date-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+  
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .section-label {
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make label bold */
+    margin-bottom: 15px; /* Add margin bottom for spacing */
+    color: #333; /* Set label color */
+  }
+  
+  /* Text inputs */
+  .team-member-container input {
+    width: 90%; /* Make inputs fill the container width */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 15px; /* Add margin bottom for spacing between inputs */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+  }
+.team-member-container .section-label {
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  color: #333; /* Change label color */
+  font-weight: bold; /* Make label bold */
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Add space between buttons */
+  margin-top: 20px; /* Add margin top for spacing */
+}
+
+/* Previous and Next buttons */
+.prev-button,
+.next-button,
+.save-button {
+  background-color: #ff0000; /* Red background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.prev-button,
+.next-button,
+.save-button,
+.button :hover {
+  background-color: #e63232; /* Red background color */
+}
+
+/* Add margin between buttons */
+.prev-button,
+.next-button {
+  margin-right: 10px;
+}
+
+/* Hover effect */
+.prev-button:hover,
+.next-button:hover,
+.save-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 90%;
+  }
+
+  .close-icon {
+    top: 5px;
+    right: 5px;
+  }
+
+  .date-label {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .prev-button,
+  .next-button,
+  .save-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
