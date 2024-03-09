@@ -5,9 +5,6 @@ import DashBoard from './components/DashBoard';
 import Schedule from './components/Schedule';
 import UpdateSection from './components/UpdateSection';
 
-
-
-
 function App() {
   return (
     <div className='App'>
@@ -15,9 +12,7 @@ function App() {
       <Navbar />
       <DashBoard />
       <Schedule />
-      <UpdateSection />
-      
-      
+      <UpdateSection /> 
     </div>
   )
 }
